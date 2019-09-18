@@ -41,12 +41,15 @@ class _MyAppState extends State<MyApp> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        gradient: LinearGradient(
-            colors: [Color(0xFF485563), Color(0xFF29323C)],
-            tileMode: TileMode.clamp,
-            begin: Alignment.topCenter,
-            stops: [0.0, 1.0],
-            end: Alignment.bottomCenter),
+        color: Colors.white,
+ 
+
+       // gradient: LinearGradient(
+        //    colors: [Color(0xFF485563), Color(0xFF29323C)],
+        //    tileMode: TileMode.clamp,
+        //    begin: Alignment.topCenter,
+        //    stops: [0.0, 1.0],
+        //    end: Alignment.bottomCenter),
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
@@ -82,7 +85,7 @@ class _MyAppState extends State<MyApp> with TickerProviderStateMixin {
                       y = 1 - delta.abs().clamp(0.0, 1.0);
                     }
                     return Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisSize: MainAxisSize.min,
                       children: <Widget>[
@@ -93,25 +96,29 @@ class _MyAppState extends State<MyApp> with TickerProviderStateMixin {
                           child: Stack(
                             children: <Widget>[
                               Opacity(
-                                opacity: .10,
-                                child: GradientText(
+                                opacity: .0,
+                                child: Text (
+                                //GradientText(
                                   page.title,
-                                  gradient: LinearGradient(
-                                      colors: pageList[index].titleGradient),
+                                 // gradient: LinearGradient(
+                                   //   colors: pageList[index].titleGradient),
                                   style: TextStyle(
-                                      fontSize: 100.0,
+                                    
+                                      fontSize: 20.0,
                                       fontFamily: "Montserrat-Black",
                                       letterSpacing: 1.0),
                                 ),
                               ),
                               Padding(
                                 padding: EdgeInsets.only(top: 30.0, left: 22.0),
-                                child: GradientText(
+                                child: Text(
+                                //GradientText(
+                                  
                                   page.title,
-                                  gradient: LinearGradient(
-                                      colors: pageList[index].titleGradient),
+                                 // gradient: LinearGradient(
+                                 //     colors: pageList[index].titleGradient),
                                   style: TextStyle(
-                                    fontSize: 70.0,
+                                    fontSize: 20.0,
                                     fontFamily: "Montserrat-Black",
                                   ),
                                 ),
