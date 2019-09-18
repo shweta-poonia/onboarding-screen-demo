@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # flutter_onboarding
 
 A new Flutter project.
@@ -14,3 +15,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our 
 [online documentation](https://flutter.io/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
+=======
+# onboarding-screen-demo
+flutter onboarding screen demo
+>>>>>>> 78ca4257af0818f5cc6ac3cfd3cc57612d7f892b
